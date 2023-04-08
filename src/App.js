@@ -3,10 +3,6 @@ import Button from "@mui/material/Button";
 import myImg from "./img/my.jpeg";
 import pizzaHolic from "./img/pizza-holic.png";
 import whatsapp from "./img/whatsapp.png";
-import crypto from "./img/crypto.png";
-import youtube from "./img/youtube.png";
-import keter from "./img/keter.png";
-import recipe from "./img/recipe.png";
 
 function App() {
   const projects = [
@@ -24,34 +20,6 @@ function App() {
       repo: "https://github.com/AdarshCoder397/whatsapp-clone",
       link: "http://whatsapp-clone-adarsh-adarsh397.vercel.app/",
     },
-    {
-      name: "YoutubeUI Clone",
-      img: youtube,
-      desc: "It's a youtubeUI Clone made using Reactjs and MaterialUI as UI Library!",
-      repo: "https://github.com/AdarshCoder397/youtube-clone",
-      link: "https://youtube-clone-adarsh397.vercel.app/",
-    },
-    {
-      name: "Crypto Price Tracker",
-      img: crypto,
-      desc: "It's a crypto price tracker which fetchs data from coingecko api!",
-      repo: "https://github.com/AdarshCoder397/crypto-tracker",
-      link: "https://crypto-tracker-nu-ashy.vercel.app/",
-    },
-    {
-      name: "Keter",
-      img: keter,
-      desc: "It's a online catering service booking website!",
-      repo: "https://github.com/AdarshCoder397/keter",
-      link: "https://keter-adarsh397.vercel.app/",
-    },
-    {
-      name: "Recipe Book",
-      img: recipe,
-      desc: "It's a website which has recipe of different food items!",
-      repo: "https://github.com/AdarshCoder397/recipe-app",
-      link: "https://recipe-book-56ic98wea-adarsh397.vercel.app/",
-    },
   ];
   return (
     <div className="App">
@@ -65,7 +33,7 @@ function App() {
       <p className="p_top">I like building websites for Homo sapiens!</p>
       <p className="p_bot">Currently I am helping people to build their</p>
       <p className="p_bot2">
-        websites for their business and for any other purposes📈!
+        websites for their business and for any other purposes📈
       </p>
       <div className="apply_btn">
         <a href="https://www.linkedin.com/in/adarsh397k/" target={"_blank"}>
@@ -112,7 +80,7 @@ function App() {
           <div className="apply_btn">
             <a href="https://github.com/AdarshCoder397" target="_blank">
               <Button variant="outlined" className="git">
-                Github
+                My Github
               </Button>
             </a>
           </div>
@@ -125,31 +93,43 @@ function App() {
       <div className="projects">
         <h2>My Projects💻</h2>
         <div className="flex_div">
-          {projects.map((project) => {
-            return (
-              <div className="project">
-                <img src={project.img} alt={project.name} />
-                <h4>{project.name}</h4>
-                <p>{project.desc}</p>
-                <div className="btns">
-                  <a href={project.repo} target="_blank">
-                    <Button variant="contained" className="repo">
-                      Repo
-                    </Button>
-                  </a>
-                  <a
-                    href={project.link}
-                    target="_blank"
-                    style={{ marginLeft: "10px" }}
-                  >
-                    <Button variant="contained" className="link">
-                      Link
-                    </Button>
-                  </a>
-                </div>
+          <div className="p1">
+            <img src={pizzaHolic} alt="" />
+            <div className="p1_info">
+              <h2>PizzaHolic Cafe</h2>
+              <ul>
+                <li>ReactJs</li>
+                <li>Firebase</li>
+                <li>MaterialUI</li>
+              </ul>
+              <div className="lnk">
+                <a href="https://pizza-holic-adarsh397.vercel.app/" target="_blank">
+                  <Button variant="outlined" className="git">
+                    Have A Look
+                  </Button>
+                </a>
               </div>
-            );
-          })}
+            </div>
+          </div>
+          <div className="p2">
+          <div className="p2_info">
+              <h2>Whatsapp Clone</h2>
+              <ul>
+                <li>ReactJs</li>
+                <li>useContext API</li>
+                <li>Firebase</li>
+              </ul>
+              <div className="lnk">
+                <a href="https://whatsapp-clone-adarsh-adarsh397.vercel.app/" target="_blank">
+                  <Button variant="outlined" className="git">
+                    Visit
+                  </Button>
+                </a>
+              </div>
+            </div>
+            <img src={whatsapp} alt="" />
+           
+          </div>
         </div>
       </div>
       <div className="hire">
