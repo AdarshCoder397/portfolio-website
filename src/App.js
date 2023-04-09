@@ -3,7 +3,9 @@ import Button from "@mui/material/Button";
 import myImg from "./img/my.jpeg";
 import pizzaHolic from "./img/pizza-holic.png";
 import whatsapp from "./img/whatsapp.png";
-
+import AOS from "aos";
+import "aos/dist/aos.css";
+AOS.init();
 function App() {
   const projects = [
     {
@@ -22,7 +24,17 @@ function App() {
     },
   ];
   return (
-    <div className="App">
+    <div
+      className="App"
+      data-aos="fade-up"
+      data-aos-offset="200"
+      data-aos-delay="50"
+      data-aos-duration="1000"
+      data-aos-easing="ease-in-out"
+      data-aos-mirror="true"
+      data-aos-once="false"
+      data-aos-anchor-placement="top-center"
+    >
       <h5>HI , I AM</h5>
       <h2>
         <span>Adarsh kumar.</span>
@@ -46,7 +58,17 @@ function App() {
         <hr />
       </div>
       <div className="me">
-        <div className="me_info">
+        <div
+          className="me_info"
+          data-aos="slide-left"
+          data-aos-offset="200"
+          data-aos-delay="50"
+          data-aos-duration="1000"
+          data-aos-easing="ease-in-out"
+          data-aos-mirror="true"
+          data-aos-once="false"
+          data-aos-anchor-placement="top-center"
+        >
           <h2>Adarsh Kumar</h2>
           <p>
             I am student and having 1 year of experience in website creation
@@ -85,7 +107,18 @@ function App() {
             </a>
           </div>
         </div>
-        <img src={myImg} className="myImg" />
+        <img
+          data-aos="slide-up"
+          data-aos-offset="200"
+          data-aos-delay="50"
+          data-aos-duration="1000"
+          data-aos-easing="ease-in-out"
+          data-aos-mirror="true"
+          data-aos-once="false"
+          data-aos-anchor-placement="top-center"
+          src={myImg}
+          className="myImg"
+        />
       </div>
       <div className="hr">
         <hr />
@@ -94,8 +127,8 @@ function App() {
         <h2>My Projects💻</h2>
         <div className="flex_div">
           <div className="p1">
-            <img src={pizzaHolic} alt="" />
-            <div className="p1_info">
+            <img src={pizzaHolic} alt="" data-aos="slide-right"/>
+            <div className="p1_info" data-aos="slide-left">
               <h2>PizzaHolic Cafe</h2>
               <ul>
                 <li>ReactJs</li>
@@ -103,7 +136,10 @@ function App() {
                 <li>MaterialUI</li>
               </ul>
               <div className="lnk">
-                <a href="https://pizza-holic-adarsh397.vercel.app/" target="_blank">
+                <a
+                  href="https://pizza-holic-adarsh397.vercel.app/"
+                  target="_blank"
+                >
                   <Button variant="outlined" className="git">
                     Have A Look
                   </Button>
@@ -112,7 +148,7 @@ function App() {
             </div>
           </div>
           <div className="p2">
-          <div className="p2_info">
+            <div className="p2_info" data-aos="slide-right">
               <h2>Whatsapp Clone</h2>
               <ul>
                 <li>ReactJs</li>
@@ -120,15 +156,17 @@ function App() {
                 <li>Firebase</li>
               </ul>
               <div className="lnk">
-                <a href="https://whatsapp-clone-adarsh-adarsh397.vercel.app/" target="_blank">
+                <a
+                  href="https://whatsapp-clone-adarsh-adarsh397.vercel.app/"
+                  target="_blank"
+                >
                   <Button variant="outlined" className="git">
                     Visit
                   </Button>
                 </a>
               </div>
             </div>
-            <img src={whatsapp} alt="" />
-           
+            <img src={whatsapp} alt="" data-aos="slide-left"/>
           </div>
         </div>
       </div>

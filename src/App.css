@@ -4,6 +4,7 @@
 /* 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 */
 
 .App {
+  overflow-x: hidden;
   /* height: 500vmin; */
   height: unset;
   margin-bottom: 3vmax;
