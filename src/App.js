@@ -108,7 +108,6 @@ function App() {
           </div>
         </div>
         <img
-          data-aos="slide-up"
           data-aos-offset="200"
           data-aos-delay="50"
           data-aos-duration="1000"
@@ -128,7 +127,7 @@ function App() {
         <div className="flex_div">
           <div className="p1">
             <img src={pizzaHolic} alt="" data-aos="slide-right"/>
-            <div className="p1_info" data-aos="slide-left">
+            <div className="p1_info">
               <h2>PizzaHolic Cafe</h2>
               <ul>
                 <li>ReactJs</li>
@@ -148,7 +147,7 @@ function App() {
             </div>
           </div>
           <div className="p2">
-            <div className="p2_info" data-aos="slide-right">
+            <div className="p2_info" >
               <h2>Whatsapp Clone</h2>
               <ul>
                 <li>ReactJs</li>

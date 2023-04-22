@@ -419,11 +419,22 @@ a {
   }
   .p1{
     flex-wrap: wrap;
+    display: flex;
+    justify-content: center
   }
   .p1_info {
+    margin-top: 2vmax;
     margin-left: 0;
   }
   .p2 {
     flex-wrap: wrap;
+    display: flex;
+    justify-content: center
+  }
+  .p2 > img {
+    width: 400px;
+  }
+  .p1 > img {
+    width: 400px;
   }
 }
